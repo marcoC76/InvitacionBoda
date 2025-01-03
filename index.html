@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Invitation Test</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="hero-section">
-  <div id="invitation-card">
-    <div class="card-content">
-      <p>Después de 37 años de amor y unión, seguimos fuertes y comprometidos. Queremos renovar nuestros votos y celebrar nuestro amor con una noche llena de emoción y alegría. ¡Únete a nosotros para compartir este momento especial! - Teresa y Miguel</p>
-      <p>Fecha: 25 de Diciembre de 2021</p>
-      <p>Hora: 7:00 PM</p>
-      <p>Lugar: Hotel Xcaret México</p>
-      <p>¡Esperamos verte ahí!</p>
 
-      <button>Check it Out!</button>
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="hero-section">
+    <div id="invitation-card">
+      <div class="card-content">
+
+        <div class="textos">
+          <p id="invitation-text" class="capital"></p>
+        </div>
+        <div class="buttons">
+          <button onclick="openModal('modal-ubicacion')"><img src="img/favourite-location_16496480.gif" alt="" width="100%"></button>
+          <button onclick="openModal('modal-confirmacion')"><img src="img/wedding-planner_18130507.gif" alt="" width="100%"></button>
+          <button onclick="openModal('modal-regalos')"><img src="img/gift_13399429.gif" alt="" width="100%"></button>
+        </div>
+        
+      </div>
+      <!-- Modales -->
+      <div id="modal-ubicacion" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-ubicacion')">&times;</span>
+          <p>Ubicación y Fecha: [Detalles aquí]</p>
+        </div>
+      </div>
+
+      <div id="modal-confirmacion" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-confirmacion')">&times;</span>
+          <p>Confirmación de Asistencia: [Detalles aquí]</p>
+        </div>
+      </div>
+
+      <div id="modal-regalos" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-regalos')">&times;</span>
+          <p>Mesa de Regalos: [Detalles aquí]</p>
+        </div>
+      </div>
+
+
     </div>
   </div>
-</div>
-<!-- partial -->
-  
+
+  <!-- partial -->
+  <script src="script.js"></script>
 </body>
+
 </html>
