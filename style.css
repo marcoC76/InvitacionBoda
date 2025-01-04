@@ -68,7 +68,7 @@ body {
   margin: 0 auto;
   width: 600px;
   text-align: justify;
-
+  animation: slideUp 2s ease-in-out forwards;
 }
 
 .card-content {
@@ -80,7 +80,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px;
-  top: 130px;
+  top: 50px;
   height: 300px;
   width: 450px;
   margin: 0 auto;
@@ -97,7 +97,7 @@ body {
   content: url(img/test-bg6.png);
   display: block;
   position: absolute;
-  top: 0px;
+  top: -70px;
   z-index: 10;
   animation: dropEnvelope 5s 2s forwards;
 }
@@ -106,11 +106,21 @@ body {
   content: url(img/test-fg3.png);
   display: block;
   position: absolute;
-  top: 124px;
+  top: 54px;
   z-index: 30;
   width: 100%;
   animation: dropEnvelope 5s 2s forwards;
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 
 @keyframes dropEnvelope {
   0% {
@@ -192,7 +202,7 @@ body {
   z-index: 1000;
   /* Asegurarse de que esté por encima de otros elementos */
   left: 0;
-  top: 0;
+  top: 0px;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -203,7 +213,7 @@ body {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   /* Centrar verticalmente */
   padding: 20px;
   border: 1px solid #888;
