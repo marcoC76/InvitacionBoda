@@ -321,3 +321,8 @@ body {
 .modal a:hover {
   text-decoration: underline;
 }
+
+.modal h2 img {
+  vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}

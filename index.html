@@ -28,9 +28,11 @@
               <p>Ubicación y <br>fecha</p>
             </div>
             <div class="button-container">
-              <button onclick="openModal('modal-confirmacion')"><img src="img/wedding-planner_18130507.gif" alt=""
-                  width="100%"></button>
-              <p>Confirmar <br>Asistencia</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScpmZa4GIBe41AZRDvbgc7XtUdBxjOrrN0Y38ncmYIm_z1mcg/viewform?usp=dialog" target="_blank" style="text-decoration: none;">
+                <button onclick="openModal('modal-confirmacion')"><img src="img/wedding-planner_18130507.gif" alt=""
+                    width="100%"></button>
+                <p>Confirmar <br>Asistencia</p>
+              </a>
             </div>
             <div class="button-container">
               <button onclick="openModal('modal-regalos')"><img src="img/gift_13399429.gif" alt=""
@@ -55,7 +57,7 @@
           <span class="close" onclick="closeModal('modal-ubicacion')">&times;</span>
           <div class="modal-columns">
             <div class="modal-column">
-              <p>Ubicación y Fecha:</p>
+              <h2><img src="img/favourite-location_16496480.gif" alt="Ubicación" width="40">Ubicación y Fecha:</h2>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.5099165752492!2d-99.06910222023726!3d19.411549026678856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc5d159c5ac1%3A0xd367857dea367daf!2zU0FMQSBCQUzDmk1DQU7DgU4!5e0!3m2!1ses-419!2smx!4v1735943441325!5m2!1ses-419!2smx"
                 width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -74,17 +76,12 @@
         </div>
       </div>
 
-      <div id="modal-confirmacion" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('modal-confirmacion')">&times;</span>
-          <p>Confirmación de Asistencia: [Detalles aquí]</p>
-        </div>
-      </div>
+      
 
       <div id="modal-regalos" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal-regalos')">&times;</span>
-          <h2>Mesa de Regalos:</h2>
+          <h2><img src="img/gift_13399429.gif" alt="Mesa de Regalos" width="40">Mesa de Regalos:</h2>
           <p>Su presencia es un regalo para nosotros <br>
             No hay regalo material que pueda compararse con la alegría de tenerlos aquí con nosotros. ¡Gracias por unirse a nuestra celebración y hacerla aún más especial!</p>
         </div>
@@ -93,8 +90,8 @@
       <div id="modal-vestimenta" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal-vestimenta')">&times;</span>
-          <h2>Un Toque de Elegancia: Blanco y Negro </h2>
-          <p>Queremos que nuestra celebración sea un evento inolvidable. Por favor, vistan ropa blanca y negra para unirse a nosotros en este día tan especial.</p>
+          <h2><img src="img/tuxedo_11870936.gif" alt="Vestimenta" width="40">Vestimenta: Blanco y Negro </h2>
+          <p>Queremos que nuestra celebración sea un evento inolvidable. <br>Por favor, vistan ropa blanca y negra para unirse a nosotros en este día tan especial.</p>
         </div>
       </div>
 
