@@ -116,6 +116,7 @@ body {
   from {
     transform: translateY(100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -213,7 +214,7 @@ body {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 5% auto;
   /* Centrar verticalmente */
   padding: 20px;
   border: 1px solid #888;
@@ -221,6 +222,22 @@ body {
   /* Ancho del modal */
   max-width: 600px;
   /* Ancho máximo del modal */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+  animation: fadeIn 0.5s;
+  /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .close {
@@ -267,4 +284,40 @@ body {
   .portrait-warning {
     display: none;
   }
+}
+
+.modal-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-column {
+  flex: 1;
+  padding: 10px;
+}
+
+.modal-column:first-child {
+  margin-right: 10px;
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.modal p, .modal ul {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.modal a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.modal a:hover {
+  text-decoration: underline;
 }

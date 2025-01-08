@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+});
+
+
 function openModal(modalId) {
   document.getElementById(modalId).style.display = 'block';
 }
@@ -49,5 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const invitationText = document.getElementById('invitation-text');
   const randomIndex = Math.floor(Math.random() * phrases.length);
   invitationText.innerHTML = phrases[randomIndex];
+
+
+
 });
+
 

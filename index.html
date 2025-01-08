@@ -19,40 +19,58 @@
         <div class="card-content">
 
           <div class="textos">
-            <p id="invitation-text" class="capital"></p>
+            <p id="invitation-text" class="capital "></p>
           </div>
           <div class="buttons">
             <div class="button-container">
               <button onclick="openModal('modal-ubicacion')"><img src="img/favourite-location_16496480.gif" alt=""
                   width="100%"></button>
-              <p>Ubicación y fecha</p>
+              <p>Ubicación y <br>fecha</p>
             </div>
             <div class="button-container">
               <button onclick="openModal('modal-confirmacion')"><img src="img/wedding-planner_18130507.gif" alt=""
                   width="100%"></button>
-              <p>Confirmar Asistencia</p>
+              <p>Confirmar <br>Asistencia</p>
             </div>
             <div class="button-container">
               <button onclick="openModal('modal-regalos')"><img src="img/gift_13399429.gif" alt=""
                   width="100%"></button>
-              <p>Mesa de Regalos</p>
+              <p>Mesa de <br>Regalos</p>
+            </div>
+            <div class="button-container">
+              <button onclick="openModal('modal-vestimenta')"><img src="img/tuxedo_11870936.gif" alt=""
+                  width="100%"></button>
+              <p>Vestimenta</p>
             </div>
           </div>
 
         </div>
-       
+
 
 
       </div>
-       <!-- Modales -->
-       <div id="modal-ubicacion" class="modal">
+      <!-- Modales -->
+      <div id="modal-ubicacion" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal-ubicacion')">&times;</span>
-          <p>Ubicación y Fecha:</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.5099165752492!2d-99.06910222023726!3d19.411549026678856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc5d159c5ac1%3A0xd367857dea367daf!2zU0FMQSBCQUzDmk1DQU7DgU4!5e0!3m2!1ses-419!2smx!4v1735943441325!5m2!1ses-419!2smx"
-            width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="modal-columns">
+            <div class="modal-column">
+              <p>Ubicación y Fecha:</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.5099165752492!2d-99.06910222023726!3d19.411549026678856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc5d159c5ac1%3A0xd367857dea367daf!2zU0FMQSBCQUzDmk1DQU7DgU4!5e0!3m2!1ses-419!2smx!4v1735943441325!5m2!1ses-419!2smx"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="modal-column">
+              <br>
+              <ul>
+                <li>Fecha: 8 de marzo de 2025</li>
+                <li>Hora: 6 pm</li>
+                <li> Lugar: SALA BALÚMCANÁN <br><a href="https://maps.app.goo.gl/zFsrRVbpnvwBbaFH7">Calle 2 #165, Agrícola Pantitlán, Iztacalco, 08100 Ciudad de México,
+                  CDMX </a></li>
+              </ul>
+              <p>Esperamos verte allí.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -66,9 +84,20 @@
       <div id="modal-regalos" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal-regalos')">&times;</span>
-          <p>Mesa de Regalos: [Detalles aquí]</p>
+          <h2>Mesa de Regalos:</h2>
+          <p>Su presencia es un regalo para nosotros <br>
+            No hay regalo material que pueda compararse con la alegría de tenerlos aquí con nosotros. ¡Gracias por unirse a nuestra celebración y hacerla aún más especial!</p>
         </div>
       </div>
+
+      <div id="modal-vestimenta" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-vestimenta')">&times;</span>
+          <h2>Un Toque de Elegancia: Blanco y Negro </h2>
+          <p>Queremos que nuestra celebración sea un evento inolvidable. Por favor, vistan ropa blanca y negra para unirse a nosotros en este día tan especial.</p>
+        </div>
+      </div>
+
     </div>
   </div>
   <!-- partial -->
